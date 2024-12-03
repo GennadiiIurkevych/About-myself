@@ -8,15 +8,20 @@ export default class Header {
   }
 
   getTemplate () {
+  
+  // <span><img className='logo' src='../img/Iron bees logo.jpg'></span>
     return `
-        <div className="nav">FITNESS</div>
-        <div className="nav">WEIGHTLIFTING</div>
-        <div className="nav">REHABILITATION</div>
+        
+        <p>МІЖНАРОДНИЙ СПОРТИВНИЙ КЛУБ "IRON BEES"</p>
+        <div className="nav">ПРО СЕБЕ</div>
+        <div className="nav">ФІТНЕС</div>
+        <div className="nav">ВАЖКА АТЛЕТИКА</div>
+        <div className="nav">РЕАБІЛІТАЦІЯ</div>
     `
   }
 
   render() {
-    const element = document.createElement('div');
+    const element = document.createElement('nav');
           element.innerHTML = this.getTemplate();
           this.element = element;
   }
