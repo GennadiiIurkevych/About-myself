@@ -2,33 +2,55 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
+
+body {
+  /* background-image: url(../img/bg.jpg); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: azure;
+}
+
 
 nav {
   display: inline-block;
   height: 80px;
-  width: 100vw;
+  width: 100%;
   font-weight: bold;
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 10px;
   justify-content: end;
   align-items: center;
-  color: blue;
-  font-family: sans-serif;
+  color: blue; 
   background-color: cyan;
 }
 
 p {
-  display: flex;
-  position: absolute;
-  left: 10px;
+  display: block;
+  position: relative;
+  left: 5px;
   font-size: 26px;
+  font-weight: bold;
+  color: rgb(0, 21, 255);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+li {
+  color: rgb(255, 47, 0);
 }
 
 span {
   display: flex;
   position: relative;
+  flex-direction: row;
   border-radius: 50px;
   width: 60px;
   height: 60px;
@@ -37,19 +59,20 @@ span {
 img {
   display: flex;
   position: relative;
-  max-height: 100%;
-  min-width: 100vw;
+  max-height: 400px;
+  width: 100%;
   overflow: hidden;
   opacity: .9;
 }
 
 h1 {
   display: flex;
-  position: absolute;
+  position: relative;
   font-family: sans-serif;
+  font-size: 40px;
   color: rgb(235, 39, 8);
-  top: 80%;
-  left: 30%;
+  top: 78%;
+  left: 20%;
   z-index: 1;
 }
 
@@ -59,3 +82,14 @@ h2 {
   color: blueviolet;
 }
 
+h3 {
+  text-align: center;
+  color: rgb(235, 39, 8);
+  font-size: 36px;
+}
+.fitnes {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  height: 400px;
+}

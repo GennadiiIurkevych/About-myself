@@ -13,6 +13,7 @@ export default class Header {
     return `
         
         <p>МІЖНАРОДНИЙ СПОРТИВНИЙ КЛУБ "IRON BEES"</p>
+        <div className="nav">ПРО СЕБЕ</div>
         <div className="nav">ФІТНЕС</div>
         <div className="nav">ВАЖКА АТЛЕТИКА</div>
         <div className="nav">РЕАБІЛІТАЦІЯ</div>
