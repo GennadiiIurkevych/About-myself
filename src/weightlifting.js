@@ -6,7 +6,7 @@ export default class Weightlifting {
 
   getTemplate () {
     return `
-      <div className="weightlifting" style="display: flex; background-color:  rgb(112, 243, 121);">
+      <div class="weightliftingWrapper">
         <h2>ВАЖКА АТЛЕТИКА</h2>
               <p>Вивчення та вдосконалення техніки виконання:</p>
                 <ul>
@@ -16,15 +16,28 @@ export default class Weightlifting {
                   <li>підвищення рівня майстерності - від масових розрядів до майстра спорту України міжнародного класу</li>
                   <li>покращення психологічної підготовки для навчально-тренувального процесу підготовчого та змагального періоду</li>             
                 </ul>
-              <img style="width: 500px; height: 200px;" src="../img/Clean and jeck.jpg">
-              <img style="width: 500px; height: 200px;" src="../img/weightlifting-Snatch.jpg">
+
       </div>
     `
   }
 
   render() {
     const weightliftingElement = document.createElement('div');
+          weightliftingElement.className = "weightliftingWrapper";
           weightliftingElement.innerHTML = this.getTemplate();
      this.weightliftingElement = weightliftingElement;
+
+     const img = document.createElement('img');
+           img.className = "weightlifting"; 
+           img.src = new URL('../img/Clean and jeck.jpg/', import.meta.url);
+
+           weightliftingElement.append(img);
+
+    const img2 = document.createElement('img');
+          img2.className = "weightlifting"; 
+          img2.src = new URL('../img/weightlifting-Snatch.jpg/', import.meta.url);
+          
+          weightliftingElement.append(img2);
+
   }
 }

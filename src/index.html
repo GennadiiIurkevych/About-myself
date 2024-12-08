@@ -3,36 +3,17 @@
   <head>
     <meta charset="utf-8"/>
     <title>About myself</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css"/>    
+     
   </head>
   <body>
+    
     <div id="root" class="wrapper"></div>
-
-
-    <script type="module">
-      import Header from './header.js';
-      const header = new Header();
-
-      import Home from './app.js';
-      const home = new Home();
-
-      import Fitness from './fitness.js';
-      const fitness = new Fitness();
-
-      import Weightlifting from './weightlifting.js';
-      const weightlifting = new Weightlifting();
-
-      import Rehabilitation from './rehabilitation.js';
-      const rehabilitation = new Rehabilitation();
-
-
+  
+  <script type="module" >
+      import App from './app.js';
+      const app = new App();
       
-      
-      root.append(header.element);
-      root.append(home.homeElement);
-      root.append(fitness.fitnessElement);
-      root.append(weightlifting.weightliftingElement);
-      root.append(rehabilitation.rehabilitationElement);
-    </script>
+  </script>  
   </body>
 </html>

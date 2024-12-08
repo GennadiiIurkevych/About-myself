@@ -1,4 +1,4 @@
-//import './styles.css';
+
 
 
 export default class Header {
@@ -9,19 +9,18 @@ export default class Header {
 
   getTemplate () {
   
-  // <span><img className='logo' src='../img/Iron bees logo.jpg'></span>
     return `
-        
-        <p>МІЖНАРОДНИЙ СПОРТИВНИЙ КЛУБ "IRON BEES"</p>
-        <div className="nav">ПРО СЕБЕ</div>
-        <div className="nav">ФІТНЕС</div>
-        <div className="nav">ВАЖКА АТЛЕТИКА</div>
-        <div className="nav">РЕАБІЛІТАЦІЯ</div>
+        <p class="nav">МІЖНАРОДНИЙ СПОРТИВНИЙ КЛУБ "IRON BEES"</p>
+        <div class="nav">ПРО СЕБЕ</div>
+        <div class="nav">ФІТНЕС</div>
+        <div class="nav">ВАЖКА АТЛЕТИКА</div>
+        <div class="nav">РЕАБІЛІТАЦІЯ</div>
     `
   }
 
   render() {
     const element = document.createElement('nav');
+          element.className = "navigation";
           element.innerHTML = this.getTemplate();
           this.element = element;
   }
