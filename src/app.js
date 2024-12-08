@@ -1,28 +1,34 @@
+import Header from './header.js';
+const header = new Header();
 
-export default class Home {
-  constructor (home) {
-    this.home = home;
-    this.render();
-  }
+import About from './about.js';
+const about = new About();
 
-  getTemplate () {
-    return `
-      
-        <img src='../img/AboutMyself.jpg'>
-        <h1>ЗАПРОШУЮ ДО ТРЕНУВАЛЬНИХ ЗАНЯТЬ</h1>
-        <h3>СКЛАДАННЯ ПРОГРАМИ: 
-          <p>- ТРЕНУВАНЬ: НА ДЕНЬ, ТИЖДЕНЬ, МІСЯЦЬ;</p>
-          <p>- ХАРЧУВАННЯ</p>
-        </h3>
-      
-    `
-  }
+import Home from './home.js';
+const home = new Home();
+
+import Fitness from './fitness.js';
+const fitness = new Fitness();
+
+import Weightlifting from './weightlifting.js';
+const weightlifting = new Weightlifting();
+
+import Rehabilitation from './rehabilitation.js';
+const rehabilitation = new Rehabilitation();
+export default class App {
+  constructor () {
+  this.render();
+  };
 
   render() {
-    const homeElement = document.createElement('div');
-          homeElement.innerHTML = this.getTemplate();
-          this.homeElement = homeElement;
+    root.append(header.element);
+    root.append(about.aboutElement);
+    root.append(home.homeElement);
+    root.append(fitness.fitnessElement);
+    root.append(weightlifting.weightliftingElement);
+    root.append(rehabilitation.rehabilitationElement);
   }
+
 }
 
-
+      

@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url("Ocean.188a1e99.jpg");
+}
+
+.home {
+  color: #eb2708;
+  z-index: 1;
+  justify-content: center;
+  margin: 80px 0;
+  font-size: 60px;
+  display: flex;
+  position: relative;
+}
+
+div.about {
+  background-color: #7fff00;
+  flex-direction: row-reverse;
+  margin: 80px 0;
+  display: flex;
+  position: relative;
+}
+
+img.about {
+  width: 800px;
+  height: 400px;
+}
+
+h1.about {
+  color: #0808f0;
+  align-items: center;
+  margin-top: 1%;
+  margin-right: 12%;
+  font-size: 60px;
+  display: flex;
+  position: absolute;
+}
+
+h3.about {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  display: flex;
+  position: relative;
+}
+
+div.startPage {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+
+h4.home {
+  color: #cd021d;
+  flex-direction: row;
+  display: flex;
+}
+
+h4.home p {
+  color: #eb0aaf;
+}
+
+img.plan {
+  opacity: .8;
+  border-radius: 20px;
+  width: 1200px;
+  height: 300px;
+  margin-top: -1160px;
+  margin-left: 360px;
+  display: flex;
+  position: relative;
+}
+
+nav {
+  color: #00f;
+  background-color: #f69d45;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8%;
+  width: 100%;
+  height: 80px;
+  font-weight: bold;
+  display: flex;
+}
+
+p {
+  color: #0015ff;
+  flex-direction: column;
+  font-size: 34px;
+  font-weight: bold;
+  display: flex;
+  position: relative;
+  left: 20px;
+}
+
+p.nav {
+  font-size: 30px;
+  left: -2%;
+}
+
+p.home {
+  flex-direction: row;
+  font-size: 30px;
+  display: flex;
+}
+
+ul {
+  flex-direction: column;
+  margin-left: 40px;
+  display: flex;
+}
+
+li {
+  color: #ff2f00;
+}
+
+span {
+  border-radius: 50px;
+  flex-direction: row;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  position: relative;
+}
+
+img.home {
+  width: 100%;
+  height: 560px;
+  margin-top: 400px;
+  display: flex;
+  position: relative;
+}
+
+h2 {
+  color: #8a2be2;
+  font-family: sans-serif;
+  display: flex;
+}
+
+h3 {
+  text-align: center;
+  color: #eb2708;
+  font-size: 36px;
+}
+
+.fitnessWrapper, .weightliftingWrapper, .rehabilitationWrapper {
+  flex-direction: row;
+  margin: 60px 0;
+  display: flex;
+  position: relative;
+}
+
+div.rehabilitation {
+  width: 60%;
+}
+
+.fitness {
+  background-color: #00ff73;
+  gap: 8%;
+  display: flex;
+  position: relative;
+}
+
+.rehabilitation {
+  background-color: #df8ff3;
+  gap: 3%;
+  display: flex;
+  position: relative;
+}
+
+.weightliftingWrapper {
+  background-color: #f0e240;
+}
+
+img.fitness {
+  flex-direction: row;
+  width: 300px;
+  height: 400px;
+  display: flex;
+}
+
+img.weightlifting {
+  width: 600px;
+  height: 320px;
+}
+
+img.rehabilitation {
+  width: 300px;
+  height: 260px;
+}
+/*# sourceMappingURL=index.4d663569.css.map */
