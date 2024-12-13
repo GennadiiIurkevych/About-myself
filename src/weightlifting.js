@@ -6,7 +6,7 @@ export default class Weightlifting {
 
   getTemplate () {
     return `
-      <div class="weightliftingWrapper">
+      <div class="weightlifting">
         <h2>ВАЖКА АТЛЕТИКА</h2>
               <p>Вивчення та вдосконалення техніки виконання:</p>
                 <ul>
